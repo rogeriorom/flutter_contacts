@@ -25,6 +25,7 @@ android {
     compileSdkVersion 30
 
     defaultConfig {
+        namespace "flutter.plugins.contactsservice.contactsservice"
         minSdkVersion 16
         targetSdkVersion 30
         versionCode 1

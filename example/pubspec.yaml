@@ -1,7 +1,8 @@
 name: contacts_service_example
 description: Demonstrates how to use the contacts_service plugin.
 environment:
-  sdk: '>=2.10.0 <3.0.0'
+  sdk: '>=3.0.0 <4.0.0'
+
 dependencies:
   flutter:
     sdk: flutter
