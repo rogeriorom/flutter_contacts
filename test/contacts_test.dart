@@ -1,5 +1,3 @@
-import 'dart:typed_data';
-
 import 'package:contacts_service/contacts_service.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -10,6 +8,7 @@ void main() {
   const MethodChannel channel =
       MethodChannel('github.com/clovisnicolas/flutter_contacts');
   final List<MethodCall> log = <MethodCall>[];
+  // ignore: deprecated_member_use
   channel.setMockMethodCallHandler((MethodCall methodCall) async {
     log.add(methodCall);
     switch (methodCall.method) {

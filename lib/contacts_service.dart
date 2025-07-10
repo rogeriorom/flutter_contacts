@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'dart:typed_data';
 
 import 'package:collection/collection.dart';
 import 'package:flutter/services.dart';
@@ -290,7 +289,7 @@ class Contact {
   }
 
   /// The [+] operator fills in this contact's empty fields with the fields from [other]
-  operator +(Contact other) => Contact(
+  Contact operator +(Contact other) => Contact(
         givenName: this.givenName ?? other.givenName,
         middleName: this.middleName ?? other.middleName,
         prefix: this.prefix ?? other.prefix,
